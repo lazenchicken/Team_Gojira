@@ -1,0 +1,111 @@
+name,level,up,right,down,left,element
+Geezard,1,1,4,1,5,N
+Funguar,1,5,1,1,3,N
+Bite Bug,1,1,3,3,5,N
+Red Bat,1,6,1,1,2,N
+Blobra,1,2,3,1,5,N
+Gayla,1,2,1,4,4,T
+Gesper,1,1,5,4,1,N
+Fastitocalon-F,1,3,5,2,1,E
+Blood Soul,1,2,1,6,1,N
+Caterchipillar,1,4,2,4,3,N
+Cockatrice,1,2,1,2,6,T
+Grat,2,7,1,3,1,N
+Buel,2,6,2,2,3,N
+Mesmerize,2,5,3,3,4,N
+Glacial Eye,2,6,1,4,3,I
+Belhelmel,2,3,4,5,3,N
+Thrustaevis,2,5,3,2,5,W
+Anacondaur,2,5,1,3,5,P
+Creeps,2,5,2,5,2,T
+Grendel,2,4,4,5,2,T
+Jelleye,2,3,2,1,7,N
+Grand Mantis,2,5,2,5,3,N
+Forbidden,3,6,6,3,2,N
+Armadodo,3,6,3,1,6,E
+Tri-Face,3,3,5,5,5,P
+Fastitocalon,3,7,5,1,3,E
+Snow Lion,3,7,1,5,3,I
+Ochu,3,5,6,3,3,N
+SAM08G,3,5,6,2,4,F
+Death Claw,3,4,4,7,2,F
+Cactuar,3,6,2,6,3,N
+Tonberry,3,3,6,4,4,N
+Abyss Worm,3,7,2,3,5,E
+Turtapod,4,2,3,6,7,N
+Vysage,4,6,5,4,5,N
+T-Rexaur,4,4,6,2,7,N
+Bomb,4,2,7,6,3,F
+Blitz,4,1,5,4,7,T
+Wendigo,4,7,3,1,6,N
+Torama,4,7,4,4,4,N
+Imp,4,3,7,3,6,N
+Blue Dragon,4,6,2,7,3,P
+Adamantoise,4,4,5,5,6,E
+Hexadragon,4,7,5,4,3,F
+Iron Giant,5,6,5,6,5,N
+Behemoth,5,3,6,5,7,N
+Chimera,5,7,6,5,3,A
+PuPu,5,3,10,2,1,N
+Elastoid,5,6,2,6,7,N
+GIM47N,5,5,5,7,4,N
+Malboro,5,7,7,4,2,P
+Ruby Dragon,5,7,2,7,4,F
+Elnoyle,5,5,3,7,6,N
+Tonberry King,5,4,6,7,4,N
+Biggs Wedge,5,6,6,2,7,N
+Fujin Raijin,6,2,8,8,4,N
+Elvoret,6,7,8,3,4,W
+X-ATM092,6,4,8,7,3,N
+Granaldo,6,7,2,8,5,N
+Gerogero,6,1,8,8,3,P
+Iguion,6,8,2,8,2,N
+Abadon,6,6,8,4,5,N
+Trauma,6,4,8,5,6,N
+Oilboyle,6,1,8,4,8,N
+Shumi Tribe,6,6,5,8,4,N
+Krysta,6,7,5,8,1,N
+Propagator,7,8,4,4,8,N
+Jumbo Cactuar,7,8,8,4,4,N
+Tri-Point,7,8,5,2,8,T
+Gargantua,7,5,6,6,8,N
+Mobile Type 8,7,8,6,7,3,N
+Sphinxara,7,8,3,5,8,N
+Tiamat,7,8,8,5,4,N
+BGH251F2,7,5,7,8,5,N
+Red Giant,7,6,8,4,7,N
+Catoblepas,7,1,8,7,7,N
+Ultima Weapon,7,7,7,2,8,N
+Chubby Chocobo,8,4,4,8,9,N
+Angelo,8,9,6,7,3,N
+Gilgamesh,8,3,7,9,6,N
+MiniMog,8,9,3,9,2,N
+Chicobo,8,9,4,8,4,N
+Quezacotl,8,2,9,9,4,T
+Shiva,8,6,7,4,9,I
+Ifrit,8,9,6,2,8,F
+Siren,8,8,9,6,2,N
+Sacred,8,5,1,9,9,E
+Minotaur,8,9,5,2,9,E
+Carbuncle,9,8,4,10,4,N
+Diablos,9,5,10,8,3,N
+Leviathan,9,7,10,1,7,A
+Odin,9,8,10,3,5,N
+Pandemona,9,10,1,7,7,W
+Cerberus,9,7,4,6,10,N
+Alexander,9,9,10,4,2,H
+Phoenix,9,7,2,7,10,F
+Bahamut,9,10,8,2,6,N
+Doomtrain,9,3,1,10,10,P
+Eden,9,4,4,9,10,N
+Ward,10,10,7,2,8,N
+Kiros,10,6,7,6,10,N
+Laguna,10,5,10,3,9,N
+Selphie,10,10,8,6,4,N
+Quistis,10,9,6,10,2,N
+Irvine,10,2,6,9,10,N
+Zell,10,8,5,10,6,N
+Rinoa,10,4,10,2,10,N
+Edea,10,10,10,3,3,N
+Seifer,10,6,9,10,4,N
+Squall,10,10,4,6,9,N
