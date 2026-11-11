@@ -7,20 +7,24 @@
 Load break down and shared code
 
 DEV 1 - Card, Player 
+
 public Card getCard(int index);
 public Card removeCard(int index);
 
 DEV 2 - PlaceCard, CaptureRules
+
 public boolean placeCard(Card card, int ownerId, int row, int col);
 public PlaceCard getCell(int row, int col);
 public boolean isFull();
 public void printBoard();
 
 DEV 3 - Game, Main
+
 public void checkCaptures(Board board, int row, int col);
 public int countOwnderCards(Board board, int playerId);
 
 DEV 4 - Board
+
 public void start();
 public void takeTurn();
 public void switchTurn();
