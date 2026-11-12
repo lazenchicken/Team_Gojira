@@ -1,0 +1,2 @@
+created - imported - tested - troubleshooted - confirmed -  cards_all.csv to work in java
+changes to Main, Card, CardDatabase
