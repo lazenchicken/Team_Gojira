@@ -2,7 +2,7 @@
 2. create 3x3 array grid and print cells
 3. choose a card and place it in empty cell
 4. Compare card ownership and neighbors change if defeated
-
+5. cards_all goes into the main folder(the folder above src)
 
 Load break down and shared code
  Imported Card Database
