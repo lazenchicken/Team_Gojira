@@ -7,11 +7,15 @@
 Load break down and shared code
  Imported Card Database
 
-DEV 1 - Card, Player
+DEV 1 - Card, Player, CardDatabase
 
 public Card getCard(int index);
 
 public Card removeCard(int index);
+
+loadCards(), findByName()
+
+getHand(), playCard()
 
 
 DEV 2 - PlaceCard, CaptureRules
@@ -31,6 +35,8 @@ public void checkCaptures(Board board, int row, int col);
 
 public int countOwnderCards(Board board, int playerId);
 
+startGame(), takeTurn(), checkCaptures(), getWinner()
+
 
 DEV 4 - Board
 
@@ -41,4 +47,6 @@ public void takeTurn();
 public void switchTurn();
 
 public void displayWinner();
+
+placeCard(), isEmpty(), display()
 
