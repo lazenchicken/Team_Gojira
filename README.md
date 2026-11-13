@@ -7,7 +7,7 @@
 Load break down and shared code
  Imported Card Database
 
-DEV 1 - Card, Player, CardDatabase
+DEV 1 - Card, Player, CardDatabase - Rick
 
 public Card getCard(int index);
 
@@ -18,7 +18,7 @@ loadCards(), findByName()
 getHand(), playCard()
 
 
-DEV 2 - PlaceCard, CaptureRules
+DEV 2 - PlaceCard, CaptureRules - Marco
 
 public boolean placeCard(Card card, int ownerId, int row, int col);
 
@@ -29,7 +29,7 @@ public boolean isFull();
 public void printBoard();
 
 
-DEV 3 - Game, Main
+DEV 3 - Game, Main - Yiyin
 
 public void checkCaptures(Board board, int row, int col);
 
@@ -38,7 +38,7 @@ public int countOwnderCards(Board board, int playerId);
 startGame(), takeTurn(), checkCaptures(), getWinner()
 
 
-DEV 4 - Board
+DEV 4 - Board - Brandon
 
 public void start();
 
