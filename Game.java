@@ -1,1 +1,28 @@
+public class Game{
 
+//start game
+
+  //load cards
+
+  //create players
+
+  //shuffle cards
+  
+  //player 1 goes first
+
+//deal 5 random cards to each player
+
+  //copy list
+
+  //shufle deck
+
+  //return player turn
+
+  //switch players
+
+  //take turn
+
+  //winner
+  
+  
+}
