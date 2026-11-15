@@ -12,7 +12,7 @@ public class CardDatabase {
         ArrayList<Card> cards = new ArrayList<Card>();
 
         BufferedReader reader = new BufferedReader(
-                new FileReader("cards_all.csv"));
+                new FileReader(fileName));
 
         reader.readLine(); // Skip CSV header
 
