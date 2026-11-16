@@ -8,12 +8,10 @@ public class Card {
     private int right;
     private int down;
     private int left;
-    private String element;
 
     // Constructor
     public Card(String name, int level, int up,
-                int right, int down, int left,
-                String element) {
+                int right, int down, int left) {
 
         this.name = name;
         this.level = level;
@@ -21,7 +19,6 @@ public class Card {
         this.right = right;
         this.down = down;
         this.left = left;
-        this.element = element;
     }
 
     // Getters
@@ -49,9 +46,7 @@ public class Card {
         return left;
     }
 
-    public String getElement() {
-        return element;
-    }
+
 
     // Display card information
     @Override
