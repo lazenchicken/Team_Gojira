@@ -8,12 +8,12 @@ public class Tester {
 
 		try {
 			// Load cards from CSV
-			ArrayList<Card> cards = CardDatabase.loadCards("cards_all.csv");
+			ArrayList<Card> cards = CardDatabase.loadCards("ffxiv_cards.csv");
 
 			System.out.println("Cards loaded: " + cards.size());
 
 			// Test finding a card by name
-			Card testCard = CardDatabase.findByName(cards, "Geezard");
+			Card testCard = CardDatabase.findByName(cards, "Dodo");
 
 			if (testCard != null) {
 				System.out.println("Found: " + testCard.getName());
