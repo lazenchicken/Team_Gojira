@@ -29,7 +29,7 @@ public class CardDatabase {
 					Integer.parseInt(data[3].trim()), // Right
 					Integer.parseInt(data[4].trim()), // Down
 					Integer.parseInt(data[5].trim()), // Left
-					"" // No element in this CSV
+					"" // removed elements in new CSV
 			);
 
 			cards.add(card);
