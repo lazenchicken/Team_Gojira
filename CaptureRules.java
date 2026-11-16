@@ -12,7 +12,9 @@ int capture = 0;
 }
 //checks if one neighbor card can be captured
 private static boolean tryCapture(Board board, int row, int col, int attack, int defense, int playerId){
+  //TODO: get neighbor card
   //TODO: who owns card
   //TODO: Compare attack to defense
   //TODO: change ownership if capture
+  //TODO: return true if capture
   return false;}}
