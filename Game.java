@@ -10,18 +10,30 @@ public class Game {
     private Player currentPlayer;
     private Board board;
 
-    // Start a new game
-    public void startGame(){
-        // Load cards using CardDatabase
-        // Create two players
-        // Create board
-        // Shuffle and deal cards
-        // Set Player 1 as current player
-        // Start turn loop
-        // Stop when board is full
-        // Display winner
+   // Start a new game
+	public void startGame() {
+		ArrayList<Card> cards = null;
+		try {
+			// Load cards using CardDatabase
+			cards = CardDatabase.loadCards("ffxiv_cards.csv");
+		} catch (IOException e) {
+			System.out.println("There was an error with loading your cards. ");
+			return;
+		}
+		// Create two players
+		player1 = new Player("Player 1", 1);
+		player2 = new Player("Player 2", 2);
+		// Create board
+		board = new Board();
+		// Shuffle and deal cards
+		dealCards(cards);
+		// Set Player 1 as current player
+		currentPlayer = player1;
+		// Start turn loop
+		// Stop when board is full
+		// Display winner
 
-    }
+	}
 
     // TODO: Randomly distribute 5 cards to each player
     private void dealCards(ArrayList<Card> cards) {
