@@ -28,7 +28,7 @@ public class CardDatabase {
 					Integer.parseInt(data[2].trim()), // Up
 					Integer.parseInt(data[3].trim()), // Right
 					Integer.parseInt(data[4].trim()), // Down
-					Integer.parseInt(data[5].trim()), // Left
+					Integer.parseInt(data[5].trim()) // Left
 					// removed elements in new CSV
 			);
 
