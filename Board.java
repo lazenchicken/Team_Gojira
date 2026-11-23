@@ -1,5 +1,4 @@
-
-public class Board {
+public class Board {                // Board  V 1.0
 
     private PlacedCard[][] grid;
 
@@ -7,44 +6,101 @@ public class Board {
         grid = new PlacedCard[3][3];
     }
 
-    // TODO: Check if cell is valid and empty
+    // Helper method to keep boundary checks DRY across all methods
+    private boolean isValidPosition(int row, int col) {
+        return row >= 0 && row < 3 && col >= 0 && col < 3;
+    }
+
+    // Check if cell is valid and empty
     public boolean isEmpty(int row, int col) {
-        // TODO: Check row and column boundaries
-        // TODO: Check if grid position is null
-      return false;
+        if (!isValidPosition(row, col)) {
+            return false;
+        }
+        return grid[row][col] == null;
     }
 
-    // TODO: Place a card on the board
-    public boolean placeCard(Card card, int ownerId,
-                             int row, int col) {
-        // TODO: Check valid board position
-        // TODO: Reject occupied cells
-        // TODO: Create PlacedCard object
-        // TODO: Store object in grid
-        // TODO: Return true on successful placement
-return false;
+    // Place a card on the board
+    public boolean placeCard(Card card, int ownerId, int row, int col) {
+        if (card == null || !isEmpty(row, col)) {
+            return false;
+        }
+        grid[row][col] = new PlacedCard(card, ownerId);
+        return true;
     }
 
-    // TODO: Retrieve card at position
+    // Retrieve card at position (returns null if out of bounds or empty)
     public PlacedCard getCell(int row, int col) {
-        // TODO: Check row and column boundaries
-        // TODO: Return placed card or null
-
+        if (!isValidPosition(row, col)) {
+            return null;
+        }
+        return grid[row][col];
     }
 
-    // TODO: Check if all 9 cells are occupied
+    // Check if all 9 cells are occupied
     public boolean isFull() {
-        // TODO: Loop through rows and columns
-        // TODO: Return false if an empty cell exists
-return false;
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                if (grid[row][col] == null) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
-    // TODO: Display 3x3 board in console
+    // Display 3x3 board in console
     public void printBoard() {
-        // TODO: Print rows and columns
-        // TODO: Show empty spaces
-        // TODO: Show placed cards and ownership
+        System.out.println("\n+---------------+---------------+---------------+");
+        for (int row = 0; row < 3; row++) {
+            // Line 1: Owner tag and Card Name (truncated to fit column width)
+            for (int col = 0; col < 3; col++) {
+                PlacedCard pc = grid[row][col];
+                if (pc == null) {
+                    System.out.printf("|   (%d,%d)       ", row, col);
+                } else {
+                    String name = pc.getCard().getName();
+                    if (name.length() > 9) {
+                        name = name.substring(0, 9);
+                    }
+                    System.out.printf("| [P%d] %-9s", pc.getOwnerId(), name);
+                }
+            }
+            System.out.println("|");
 
+            // Line 2: Top stat
+            for (int col = 0; col < 3; col++) {
+                PlacedCard pc = grid[row][col];
+                if (pc == null) {
+                    System.out.print("|               ");
+                } else {
+                    System.out.printf("|       %-2d      ", pc.getCard().getUp());
+                }
+            }
+            System.out.println("|");
+
+            // Line 3: Left and Right stats
+            for (int col = 0; col < 3; col++) {
+                PlacedCard pc = grid[row][col];
+                if (pc == null) {
+                    System.out.print("|     EMPTY     ");
+                } else {
+                    Card c = pc.getCard();
+                    System.out.printf("|   %-2d      %-2d  ", c.getLeft(), c.getRight());
+                }
+            }
+            System.out.println("|");
+
+            // Line 4: Bottom stat
+            for (int col = 0; col < 3; col++) {
+                PlacedCard pc = grid[row][col];
+                if (pc == null) {
+                    System.out.print("|               ");
+                } else {
+                    System.out.printf("|       %-2d      ", pc.getCard().getDown());
+                }
+            }
+            System.out.println("|");
+            System.out.println("+---------------+---------------+---------------+");
+        }
     }
 }
-
